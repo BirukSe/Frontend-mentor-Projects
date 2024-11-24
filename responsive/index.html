@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Product preview card component</title>
+
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .perfume{
+        font-size: large;
+    }
+  
+        h1{
+            font-size: 30px;
+            
+        }
+        .image{
+            src: url(./assets/images/image-product-desktop.jpg);
+        }
+        h2{
+            font-size: 30px;
+            font-weight: bolder;
+            color: hsl(158, 36%, 37%);
+        }
+        .text-container{
+            width: 400px;
+            height: 400px;
+           
+            
+        }
+        .price-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            width: 400px;
+            height: 40px;
+            background-color: hsl(158, 36%, 37%);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    @media screen and (max-width: 1212px) {
+
+        .main{
+            width: 450px;
+          
+            
+           
+            margin-top: 50px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+           
+
+        }
+        .image{
+            width: 400px;
+            height: 300px;
+            
+        }
+       
+       
+       
+    }
+</style>
+<body>  
+    <div class="main">
+        <div class="image-container">
+            <img class="image" src="/assets/images/image-product-mobile.jpg"/>
+
+
+        </div>
+        <div class="text-container">
+            <p class="perfume">PERFUME</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                Perfumer-Creator for the House of CHANEL.</p>
+                <div class="price-container">
+                    <h2>$149.99</h2>
+                    <p>$169.99</p>
+                </div>
+                <button>Add to Cart</button>
+
+    
+        </div>
+
+
+    </div>
+   
+
+</body>
